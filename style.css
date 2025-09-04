@@ -1,0 +1,92 @@
+body {
+    background-color: #e8e8e3;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+.content-container {
+    background-color: #e8e8e3;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #e8e8e3;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px solid #334433;
+    
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding-bottom: 5px;
+}
+header p {
+    font-size: 1.1em;
+    margin: 0;
+    color: #555;
+}
+#about-him {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 0;
+    gap: 70px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#about-him img {
+    margin-top: 20px;
+    max-width: 350px;
+    height: 350px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#about-him div {
+    flex-grow: 1;
+}
+#about-him p,
+#about-him li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+}
+#about-him h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#about-him ul {
+    list-style: disc;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+#about-him li {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+    #about-him {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    #about-him img {
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+        display: block;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header p, #about-him p, #about-him li {
+        font-size: 1em;
+    }
+}
+
